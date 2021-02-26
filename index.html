@@ -1,0 +1,487 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Biodata
+        </title>
+        <style>
+body {
+    position: relative;
+    background-color:#bde5e1;
+    font-family: Georgia, 'Times New Roman', Times, serif,Arial;
+}
+/*Nav Bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f5f5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #8739f9;
+  color: #363636;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*image*/
+
+#circle
+ {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7vw;
+   border-radius:50% 50% 50% 50%;  
+   width:18vw;
+   height:18vw;
+}
+/*About*/
+#secondPage{
+  background:#f2f5f5;
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
+  }
+  #about{
+  text-align: center;
+  padding-bottom: 5.09vw;
+  margin-left:15vw;
+  margin-right:15vw;
+  background:#f2f5f5;
+  
+}
+/*Educational Qualifications*/
+#thirdPage{
+  background:#6a737a;
+  padding-top:0.1vw;
+  padding-bottom:7vw;
+  }
+#edu{
+  text-align: center;
+  padding-bottom: 4vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  background:#bdc6ce;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+#iedu
+ {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7vw;
+   width: 12vw;
+   height: 12vw;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 40vw;
+  border: 0.4vw solid #ddd;
+}
+
+th,td {
+  width: 5vw;
+  text-align: center;
+  padding: 0.6vw;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+/*skills*/
+#fourthPage{
+  background:#9099a1;
+  padding-top:0.5vw;
+  padding-bottom:2vw;
+  }
+  #skills{
+  text-align: center;
+  padding-bottom: 5.09vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  background:#bdc6ce;
+}
+#iskill
+ {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1vw;
+   width: 12vw;
+   height: 12vw;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 40vw;
+  border: 0.4vw solid #ddd;
+}
+
+th,td {
+  width: 5vw;
+  text-align: center;
+  padding: 0.6vw;
+}
+.checked {
+  color: blue;
+}
+/*projects*/
+#fifthPage{
+  background:#6a737a;
+  padding-top:0.5vw;
+  padding-bottom:1.5vw;
+  }
+  #projects{
+  text-align: center;
+  padding-bottom: 5.09vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  background:#bdc6ce;
+}
+  .column {
+  float: left;
+  width: 27vw;
+  padding: 0;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*Contact Me*/
+#sixthPage{
+  background:#9099a1;
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
+  }
+  #contact{
+  text-align: left;
+  padding-bottom: 5.09vw;
+  margin-left:5vw;
+  margin-right:5vw;
+  background:#bdc6ce;
+}
+/*form*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #bdc6ce;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*bottom bar*/
+footer{
+  background-color:#333a3f;
+  color:rgb(248, 245, 245);
+  padding-bottom: 0px;
+  
+}
+.footer:hover{
+  background: #45a049;
+  color: rgb(199, 180, 180);
+}
+</style>
+    </head>
+    <body>
+      <div class="topnav" id="myTopnav">
+        <a href="#about">About</a>
+        <a href="#edu">Edu. Qualifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+        <a href="#
+         "><i class="fa fa-fw fa-download"></i>Download</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <img src="images/Daco_1888496.png" id="circle" /> 
+      <p style="font-size: 4vw;" align="center">Tejas Ambhore</p>
+      <div style="text-align: center;">
+      <a href="https://www.facebook.com/tejas.ambhore.77/"><h2 class="center"><i class="fa fa-facebook" ></i> Facebook</h2></a>
+      <a href="https://www.linkedin.com/in/tejas-ambhore-3634ba206/"><h2 class="center"><i class="fa fa-linkedin" ></i> Likedin</h2></a>
+      <a href="https://www.github.com/tejasambhore"><h2 class="center"><i class="fa fa-github" ></i> Github</h2></a></div>
+      <div id="secondPage">
+        <div id="about">
+            <h1 > About</h1>
+            
+              <p>Hi there,I'm Tejas Ambhore, a 18 year old undergrad currently studying Manufacturing Science and Engineering at IIT kharagpur</p>
+              <p>The development field is vast, as I am discovering. I do hold great interest in areas such as Machine Learning and Artificial Intelligence,</p>
+                <p> which I hope to get hands on which as I progress with development</p> 
+              <p>Thank you for visiting my site. Please have a look around and get in contact with me if you wish.</p>
+            </div>
+      </div>
+      <div id="thirdpage">
+        <div id="edu">
+          
+            <img src="images/Daco_4261611.png" id="iedu"/> 
+            <h1>Educational Qualifications</h1>
+            <h3>Schooling</h3>
+            <table class="center">
+              <tr>
+                <th>Class</th>
+                <th>Grade</th>
+              </tr>
+              <tr>
+                <td>10th</td>
+                <td>93%</td>
+              </tr>
+              <tr>
+                <td>12th</td>
+                <td>87%</td>
+              </tr>
+            </table>
+            <h3>B.Tech</h3>
+            <table class="center">
+              <tr>
+                <th>Semester</th>
+                <th>Grade</th>
+              </tr>
+              <tr>
+                <td>I</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>II</td>
+                <td>-</td>
+              </tr>
+            </table>
+            <h4>Further Graduation is going on.</h4>
+          
+        </div>   
+      </div>
+      <div>
+
+        <div id="fourthPage">
+          <div id="skills">
+            <img src="images/Daco_2089021.png" id="iskill"/>
+            <h1>SKILLS</h1>
+            <table class="center">
+              <tr>
+              <th>Skills</th>
+              <th>Rating</th>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span></td>
+              </tr>
+              <tr>
+                <td>C language</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span></td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span></td>
+              </tr>
+              
+            </table>
+            </div>
+            </div>
+
+            <div id="fifthPage">
+              <div id="projects">
+                <h1>Projects</h1>
+              <div class="row">
+                <div class="column" style="background-color:#bdc6ce;">
+                  <h2><a href="">Project1</a></h2>
+                  <p></p>
+                </div>
+                <div class="column" style="background-color:#bdc6ce;">
+                  <h2><a href="">Project2</a</h2>
+                  <p></p>
+                </div>
+                <div class="column" style="background-color:#bdc6ce;">
+                  <h2><a href="">Project3</a</h2>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+             <div id="sixthpage">
+               <div id="contact">
+                <div class="container">
+                  <h1>Contact Me</h1>
+                  <form action="Biodata.html">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="name">Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Just so i know who to say hello to..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="email" name="Email" placeholder="just so i know where ro reply..">
+                      </div>
+                    </div>
+                
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="subject">Message</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="subject" name="Message" placeholder="" style="height:200px"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Send">
+                    </div>
+                  </form>
+                </div>
+               </div>
+             </div> 
+ 
+              <footer>
+                  <h4>Copyright © Tejas Ambhore</h4> 
+                  <h4>Go Up</h4>
+                  </footer>
+
+      <script>
+/*Nav Bar*/
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+      </script>
+
+    </body>
+</html>
